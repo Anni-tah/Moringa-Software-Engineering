@@ -57,9 +57,34 @@ img{
     
 }
 .image{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.z-index{
+    position: relative;
+    z-index: 2;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.overlay .shape{
+    width: initial;
+    opacity: 0.13;
+    position: absolute;
+}
+.overlay.overlay-lg .shape{
+    height: 55px;
+}
+.overlay.overlay-lg .shape.wave{
+    height: 55px;
+    
 }
 /* End General Styles */
 
@@ -68,6 +93,7 @@ header{
     width: 100%;
     background-color: var(--light-three);
     overflow: hidden;
+    position: relative;
 }
 nav{
     width: 100%;
@@ -147,4 +173,65 @@ margin-left: 1rem;
 
 .header-content .image .img-element{
     max-width: 750px;
+}
+
+.overlay.overlay-lg .shape.xshape{
+    height: 38px;
+}
+header .points1{
+    width: 420px;
+}
+.points{
+   opacity: 0.3;
+   position: absolute; 
+}
+header .points1{
+    width: 420ox;
+    bottom: -75px;
+    left: -150px;
+}
+header .points2{
+     width: 70%;
+     top: 65%;
+     left: 71%;
+}
+header .square{
+    right: 68%;
+    top: 71%;
+}
+header .triangle{
+    right: 7%;
+    bottom: 75%;
+}
+header .xshape{
+    right: 4%;
+    bottom: 50%;
+}
+header .half-circle1{
+    left: 50%;
+    bottom: 82%;
+}
+header .half-circle2{
+    left: 5%;
+    top: 67%;
+}
+header .wave1{
+    bottom: 75%;
+    left: 20%;
+}
+header .wave2{
+    bottom:8%;
+    right: 55%;
+
+}
+header .circle{
+   left: 38%;
+   bottom: 63%; 
+}
+.letters{
+   position:absolute;
+   width: 13.5%;
+   top:-5px; 
+   left: 15px;
+   opacity: 0.06;
 }

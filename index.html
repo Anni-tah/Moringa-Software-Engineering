@@ -132,14 +132,14 @@
                     </div>
                     <div class="section-body">
                         <div class="filter">
-                     <button class="filter-btn active">All</button>
-                     <button class="filter-btn">AI/UX</button>
-                     <button class="filter-btn">Web Dev</button>
-                     <button class="filter-btn">Mobile App</button>
-                     <button class="filter-btn">Logo Design</button>
+                     <button class="filter-btn active"data-filter="*">All</button>
+                     <button class="filter-btn" data-filter=".ui">AI/UX</button>
+                     <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+                     <button class="filter-btn" data-filter=".appdev">Mobile App</button>
+                     <button class="filter-btn"data-filter=".logo">Logo Design</button>
                     </div>
                     <div class="grid">
-                        <div class="grid-item">
+                        <div class="grid-item logo">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port1.jpg" alt="" srcset="">
                                 <div class="img-overlay">
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item webdev">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port2.png" alt="" srcset="">
                                 <div class="img-overlay">
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item ui webdev">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port3.png" alt="" srcset="">
                                 <div class="img-overlay">
@@ -175,7 +175,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item ui ">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port4.png" alt="" srcset="">
                                 <div class="img-overlay">
@@ -187,7 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item logo">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port5.jpg" alt="" srcset="">
                                 <div class="img-overlay">
@@ -199,7 +199,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item appdev ">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port6.jpg" alt="" srcset="">
                                 <div class="img-overlay">
@@ -211,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-item">
+                        <div class="grid-item logo appdev">
                             <div class="gallery-image">
                                 <img src="images/Portfolio/port7.jpg" alt="" srcset="">
                                 <div class="img-overlay">
@@ -232,8 +232,9 @@
                                     <h5>View Demo</h5>
                                 </div>
                             </div>
-                        </div></div>
-                        <div class="grid-item">
+                        </div>
+                    </div>
+                        <div class="grid-item ui webdev">
                              <div class="gallery-image">
                             <img src="images/Portfolio/port9.png" alt="" srcset="">
                             <div class="img-overlay">
@@ -244,14 +245,58 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    </div>
+                    </div> 
+                </div>
+                <div class="more-folio">
+                    <a href="#" class="btn">More Folio</a>
+                </div>
                 </div>
                 </div>
             </div>
         </section>
-    </main>
+        <section class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Who am i">About Me</h3>
+                </div>
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Hello, I'm</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Voluptates corrupti nulla, totam velit ut nesciunt iure.
+                             Accusamus nostrum dolor mollitia?
+                        </p>
+                        <div class="skills">
+                            <div class="skill html">
+                             <h3 class="skill-title">HTML</h3>
+                             <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                             </div>
+                            </div>
+                            <div class="skill css">
+                                <h3 class="skill-title">CSS</h3>
+                                <div class="skill-bar">
+                                   <div class="skill-progress"></div>
+                                </div>
+                               </div>
+                               <div class="skill js">
+                                <h3 class="skill-title">JavaScript</h3>
+                                <div class="skill-bar">
+                                   <div class="skill-progress"></div>
+                                </div>
+                               </div>
+                        </div>
+                        <a href="" class="btn">Read More</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="images/about.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </main>
     <script   src="https://code.jquery.com/jquery-3.7.1.js"   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="   crossorigin="anonymous"></script> 
     <script src="js/isotope.pkgd.min.js"></script>
 <script src= "js/app.js"></script>

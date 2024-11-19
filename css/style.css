@@ -92,6 +92,7 @@ img{
  }
  section{
     padding: 7rem 0;
+    overflow: hidden;
  }
  .title-sm{
     color: var(--dark-one);
@@ -379,7 +380,7 @@ header .circle{
     position: relative;
     width: 100%;
     background-color: var(--ligt-two);
-    min-height: 1200px;
+    min-height: 1200;
 }
 .background-bg{
     position: absolute;
@@ -486,6 +487,8 @@ header .circle{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transform-origin: center; 
+    transition: 0.5s;
    
 }
 .gallery-image .img-overlay{
@@ -510,9 +513,10 @@ header .circle{
     margin: auto 0;
 }
 .plus:before, .plus:after{
-    content: '';
+    content: "";
     position: absolute;
     width: 4.5rem;
+    height: 3px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -520,7 +524,7 @@ header .circle{
     border-radius: 3px;
 }
 .plus:before{
-    transform: translate(-50%,-50%) rotate(-90deg) ;
+    transform: translate(-50%, -50%) rotate(-90deg) ;
 }
 .img-description{
     width: 100%;
@@ -535,9 +539,56 @@ header .circle{
     font-weight: 300;
 }
 .gallery-image:hover .img-overlay{
-    opacity: .1;
+    opacity: 1;
 
+}
+.gallery-image:hover img{
+    transform: translate(-50%,-50%) scale(1.1);
+}
+.more-folio{
+    display: flex;
+    justify-content: center;
 }
 
 /* End Portfolio*/
+
+/*about*/
+.about{
+    overflow: hidden;
+}
+/* End about*/
+.about img{
+    max-width:600px ;
+}
+.about .text{
+    margin-top: 1rem;
+}
+.skills{
+   margin: 1.5rem 0.25rem 0; 
+}
+.skill{
+    margin: 1rem 0;
+}
+.skill-title{
+    color: #555;
+    font-weight:600;
+    margin-top: 0.3rem;
+}
+.skill-bar{
+    width: 70%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ece6fa ;
+    position: relative;
+    overflow: hidden;
+}
+.skill-progress{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 1;
+}
 
